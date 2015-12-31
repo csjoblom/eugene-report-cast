@@ -20,10 +20,13 @@ request(url, function (error, response, body) {
             newLog.eventNumber = tds.eq(6).text();
             newLog.location = tds.eq(7).text();
             newLog.priority = tds.eq(8).text();
+            newLog.meta = {
+                timeCollected : new Date().toLocaleString()
+            };
 
             logs.push(newLog);
         });
-        console.log(logs);
+        console.log(JSON.stringify({error:error,data:logs}));
 
     } else {
         console.log(error);
