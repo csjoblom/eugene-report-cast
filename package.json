@@ -1,0 +1,34 @@
+{
+  "name": "eugene-report-cast",
+  "version": "1.0.0",
+  "description": "Eugene Public Data Scraper, Scrubber, Storer, and Broadcaster",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csjoblom/eugene-report-cast.git"
+  },
+  "keywords": [
+    "scraper",
+    "twitter",
+    "node",
+    "javascript",
+    "mongo"
+  ],
+  "author": "Chris Sjoblom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csjoblom/eugene-report-cast/issues"
+  },
+  "homepage": "https://github.com/csjoblom/eugene-report-cast#readme",
+  "dependencies": {
+    "casper": "^0.1.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.3.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
