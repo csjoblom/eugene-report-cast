@@ -15,7 +15,7 @@ request(url, function (error, response, body) {
             newLog.callTime = tds.eq(1).text();
             newLog.dispatchTime = tds.eq(2).text();
             newLog.incidentDescription = tds.eq(3).text();
-            newLog.officers = tds.eq(4).text();
+            tds.eq(4).text().split("     ").length > 1 ? newLog.officers = tds.eq(4).text().split("     "): newLog.officers = tds.eq(4).text();
             newLog.disposition = tds.eq(5).text();
             newLog.eventNumber = tds.eq(6).text();
             newLog.location = tds.eq(7).text();
